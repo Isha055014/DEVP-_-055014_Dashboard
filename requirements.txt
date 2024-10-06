@@ -1,7 +1,6 @@
 streamlit
 pandas
 datetime
-PIL
 altair
 plotly.express
 plotly.graph_objects
