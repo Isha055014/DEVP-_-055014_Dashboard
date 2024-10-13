@@ -8,7 +8,7 @@ import altair as alt
 import pydeck as pdk
 
 
-data = pd.read_csv(r"C:\Users\ishud\Downloads\Imports_Exports_Dataset - Copy.csv")
+data = pd.read_csv(r"IE.csv")
 df = data.sample(n = 3001 , random_state = 55014)
 
 st.set_page_config(layout = "wide")
