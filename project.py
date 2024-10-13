@@ -170,11 +170,11 @@ with col3:
     middle_column.plotly_chart(fig_seat_dist, use_container_width=True)
 
 with col4:
-    df_grouped = df.groupby(["Payment_Terms", "Category"]).agg({"Value": "count"}).reset_index()
+    df_grouped = df.groupby(["Payment_Terms", "Category"]).agg({"Quantity": "count"}).reset_index()
     make_price_fig = px.bar(
         df_grouped,
         x="Category",
-        y="Value",
+        y="Quantity",
         color="Payment_Terms",
         title="<b>Payment Terms vs Category</b>",
         template="seaborn"
